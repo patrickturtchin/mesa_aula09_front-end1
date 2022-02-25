@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    background-color: #345d82;
+    font-family: 'Roboto', sans-serif;
+    margin: 72px 0;
+}
+
+.ytb {
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+    position: center; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 1; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+}
+
+.page-title {
+    color: orange;
+    font-size: 100px;
+    padding-left: 64px;
+    margin-bottom: 6px;
+}
+
+.page-description {
+    color: white;
+    padding-left: 64px;
+}
+
+.videos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.video {
+    width: 30%;
+    height: fit-content;
+    margin-top: 24px;
+    padding: 32px 12px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.video:hover {
+    transform: scale(1.03);
+    filter: brightness(120%);
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-time {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    float: right;
+    padding: 8px 12px;
+    display: block;
+    transform: translateY(-35px);
+}
+
+.video-title {
+    color: white;
+    margin: 8px 0 12px;
+}
+
+.video-description {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.video-views {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 12px;
+    display: block;
+}
+
+.video-date {
+    color: white;
+    text-align: right;
+    display: block;
+}
+
